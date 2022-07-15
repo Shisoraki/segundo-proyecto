@@ -92,12 +92,21 @@ h3{
 
 /* navegacion */
 
-.navegacion{
+.navegacion{ 
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 3rem;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 38rem 0 45rem;    }
 }
 
 .navegacion__enlace{
